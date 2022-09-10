@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>Ori and The Wild of the Wisps</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+
+
+
+
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ori Specs</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" focusable="false"
+            src="banner1.jpg" style="border-left: solid 150px; border-right: solid 150px; border-color: black;">
+          <rect width="100%" height="100%" fill="rgb(33 37 41)" />
+
+          <div class="container">
+
+            <div class="carousel-caption text-start">
+              <h1>Ori and the Blind Forest</h1>.
+              <p>Ori and the Blind Forest explora uma história profundamente emocional sobre amor e sacrifício e a
+                esperança que existe em todos nós.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" focusable="false"
+            src="banner1.jpg">
+          <rect width="100%" height="100%" fill="#FFF" />
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Ori and the Will of the Wisps</h1>
+              <p>É a continuação de Ori and the Blind Forest.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" focusable="false"
+          src="banner1.jpg">
+            <rect width="100%" height="100%" fill="#777" />
+          
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Moon Studios</h1>
+              <p>Moon Studios é uma casa de desenvolvimento distribuído: todos os membros da equipe estão espalhados
+                pelo mundo, permitindo que Moon trabalhe com as melhores e mais talentosas pessoas da indústria de jogos
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" src="ori1.jpeg">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <h2 class="fw-normal">Ori and the Blind Forest</h2>
+          <p>Ori and the Blind Forest conta a história de um jovem órfão destinado ao heroísmo através de um
+            Action-Platformer visualmente deslumbrante criado pela Moon Studios para Xbox e PC. Apresentando obras de
+            arte pintadas à mão, performance de personagens meticulosamente animada e uma trilha sonora lindamente
+            orquestrada, Ori and the Blind Forest explora uma história profundamente emocional sobre amor e sacrifício e
+            a esperança que existe em todos nós.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" src="ori2.jpeg">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <h2 class="fw-normal">Ori and the Will of the Wisps</h2>
+          <p>O jogo foi lançado em 11 de março de 2020, para Xbox One e PC, e no Nintendo Switch em 17 de setembro de
+            2020. Também foi otimizado para Xbox Series X, lançado em 10 de novembro de 2020. Desenvolvido pela Moon
+            Studios e publicado pela Microsoft Estúdios. É a continuação de Ori and the Blind Forest.
+          </p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" src="ori3.jpeg">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <h2 class="fw-normal">Moon Studios</h2>
+          <p>Moon Studios é um estúdio independente de desenvolvimento de videogames, fundado em 2010 por Thomas Mahler
+            (ex-Artista Cinematográfico da Blizzard Entertainment) e Gennadiy Korol (ex-Engenheiro Gráfico Sênior do
+            Animation Lab). A empresa se concentra principalmente em mecânicas de jogo altamente refinadas em seus
+            produtos e se orgulha de um processo de "polimento iterativo" excessivo.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Mora <span class="text-muted">Mouldwood Depths</span></h2>
+          <p class="lead">Depois de percorrer Mouldwood Depths, sua recompensa é uma luta contra uma aranha enorme,
+            Mora. Ela inicialmente o jogará para baixo e você cairá na arena corretamente. A saliência de aparência útil
+            aqui não ficará por muito tempo, então não se preocupe com isso. Você deve notar que em ambos os lados da
+            arena, as paredes estão nuas, o que significa que elas podem ser escaladas. Isso será especialmente útil
+            para esquivar e ganhar altura durante a luta. Na parede esquerda, há um Spirit Crystal que irá reaparecer ao
+            longo do tempo, então pegue-o quando puder e use-o em combinação com o movimento Regeneration para manter
+            sua saúde recarregada. Com isso e aprendendo seus movimentos, você não deve ter muitos problemas. Spirit
+            Edge é novamente muito útil, e lembre-se, você precisa bater na cabeça dela para danificá-la.</p>
+        </div>
+        <div class="col-md-5">
+          <rect width="100%" height="100%">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" aria-label="Placeholder: 500x500" focusable="false" src="aranha.jpeg">
+          </rect>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Kwolok <span class="text-muted">Luma Pools</span></h2>
+          <p class="lead">Esta é uma luta em duas etapas, sem checkpoints. Requer muita paciência, testa algumas de suas
+            diferentes habilidades e exige que você observe o inimigo de perto antes de planejar seus ataques. Você
+            estará lutando na primeira fase em terra firme e depois na segunda na água, então esteja preparado. Também
+            no início, Kwolok vai esmagar o chão e criar um poço de espinhos no meio do chão. Evite tocar nisso a todo
+            custo, pois isso esgotará sua saúde rapidamente em qualquer fase.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <rect width="100%" height="100%">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" aria-label="Placeholder: 500x500" focusable="false" src="sapo.jpeg">
+          </rect>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Shriek <span class="text-muted">Willow's End</span></h2>
+          <p class="lead">Shriek é grande e muito forte. Ela pode voar e usa isso a seu favor em sequências de
+            perseguição, ela pode te atacar se você passar por baixo dela com suas 2 garras menores, pisando com seus
+            membros de lança de osso. Ela pode enviar chamas pelo chão, disparar projéteis de corrupção. Ela também tem
+            um ataque de laser que vai do lado esquerdo ou direito da tela até o meio. Shriek usa seu vôo para destruir
+            estruturas, o que leva à 2ª fase, onde algumas habilidades são usadas de maneira diferente. No lado esquerdo
+            ou direito da arena, ela dispara uma espingarda de projéteis de corrupção de sua boca. Shriek pode mergulhar
+            rapidamente de cima e voar do fundo. Quando ela tem pouca saúde, a fase 3 começa, onde não há chão, e o
+            jogador tem que se defender de projéteis de corrupção que chovem constantemente ou usar a habilidade de
+            lançamento.</p>
+        </div>
+        <div class="col-md-5">
+
+          <rect width="100%" height="100%">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" aria-label="Placeholder: 500x500" focusable="false" src="coruja.jpeg">
+          </rect>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Voltar ao início</a></p>
+      <p>&copy; 2022 Ori Specs, Inc.</p>
+    </footer>
+  </main>
+
+
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
